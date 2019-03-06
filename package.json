@@ -1,6 +1,6 @@
 {
   "name": "kw-stylelint-config",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Kiwi Wealth Limited - Recommended shareable config for stylelint",
   "keywords": [
     "stylelint",
@@ -31,7 +31,16 @@
     "stylelint": "^9.10.1"
   },
   "peerDependencies": {
-    "stylelint": "^8.3.0 || ^9.10.1"
+    "stylelint": "^8.3.0 || ^9.10.1",
+    "stylelint-config-idiomatic-order": "^6.2.0",
+    "stylelint-config-prettier": "^5.0.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-declaration-use-variable": "^1.7.0",
+    "stylelint-high-performance-animation": "^1.1.1",
+    "stylelint-scss": "^3.5.4",
+    "stylelint-selector-bem-pattern": "^2.0.0",
+    "stylelint-selector-no-empty": "^1.0.7",
+    "stylelint-z-index-value-constraint": "^1.0.0"
   },
   "scripts": {
     "dry-release": "npmpub --dry --verbose",

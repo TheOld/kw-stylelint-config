@@ -1,6 +1,20 @@
 "use strict";
 
 module.exports = {
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-idiomatic-order",
+    "stylelint-config-prettier",
+  ],
+   "plugins": [
+    "stylelint-scss",
+    "stylelint-selector-bem-pattern",
+    "stylelint-selector-no-empty",
+    "stylelint-z-index-value-constraint",
+    "stylelint-a11y",
+    "stylelint-declaration-use-variable",
+    "stylelint-high-performance-animation"
+  ],
   rules: {
    "at-rule-empty-line-before": [
       "always",
@@ -170,5 +184,30 @@ module.exports = {
     "value-list-comma-space-after": "always-single-line",
     "value-list-comma-space-before": "never",
     "value-no-vendor-prefix": true,
-  }
+    "scss/at-extend-no-missing-placeholder": true,
+    "scss/declaration-nested-properties": "never",
+    "scss/declaration-nested-properties-no-divided-groups": true,
+    "scss/dollar-variable-colon-space-before": "never",
+    "scss/dollar-variable-colon-space-after": "at-least-one-space",
+    "scss/selector-no-redundant-nesting-selector": true,
+    "scss/at-rule-no-unknown": true,
+    "plugin/no-low-performance-animation-properties": true,
+    "sh-waqar/declaration-use-variable": "/color/",
+    "plugin/stylelint-selector-no-empty": true,
+    "plugin/z-index-value-constraint": {
+      "min": 1,
+      "max": 10
+    },
+    "plugin/selector-bem-pattern": {
+      "componentName": "[A-Z]+",
+      "componentSelectors": {
+        "initial": "^\\.{componentName}(?:-[a-z]+)?$",
+        "combined": "^\\.combined-{componentName}-[a-z]+$"
+      },
+      "utilitySelectors": "^\\.util-[a-z]+$"
+    }
+  },
+  "ignoreFiles": [
+    "**/*.js"
+  ]
 };
