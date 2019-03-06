@@ -1,6 +1,6 @@
 {
   "name": "kw-stylelint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Kiwi Wealth Limited - Recommended shareable config for stylelint",
   "keywords": [
     "stylelint",
